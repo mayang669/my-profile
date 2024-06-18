@@ -1,0 +1,434 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+
+
+}
+
+body {
+  background-color: #070707;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+
+
+  
+}
+.column {
+  width: 100%;
+  float: left;
+  padding: 20px;
+  text-align: center;
+  color: #070707;
+
+}
+
+@media (min-width: 768px) {
+  .column {
+    width: 50%;
+
+
+  }
+}
+header {
+  font-size: large;
+  background-color: #ba0a0a;
+
+  color: #070707;
+  margin-bottom: 20px;
+
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  z-index: 1;
+
+
+}
+
+nav {
+  background-color: transparent;
+  color: #070707;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+nav a {
+  color: #070707;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+nav a.active {
+  color: #fff;
+}
+
+nav .logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+nav .logo img {
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+}
+
+
+
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+  font-weight: bold;
+
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  color:#070707;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #fff;
+
+} 
+nav ul li a.active {
+  color: #fff;
+
+}
+
+section {
+  padding: 30px 0;
+  text-align: center;
+
+}
+
+section h2 {
+  color: #ba0a0a;
+  font-size: 25px;
+  margin-bottom: 20px;
+
+}
+
+section p {
+  color: #ba0a0a;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+section a {
+  color: #ba0a0a;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+}
+
+section a:hover {
+  color: #fff;
+}
+
+section img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+contact {
+  color: #ba0a0a;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+
+  font-size: 15px;
+  margin-bottom: 25px;
+  font-size: 20px;
+  margin-bottom: 20px;
+
+}
+
+footer {
+  background-color: #070707;
+
+  color: #ba0a0a;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+
+}
+
+footer p {
+  color: #ba0a0a;
+  font-size: 15px;
+  margin-bottom: 25px;
+
+}
+
+footer a {
+  color: #ba0a0a;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+}
+
+
+
+
+.content {
+  color: #ba0a0a;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+.content h1 {
+  color: #ba0a0a;
+  font-size: 40px;
+  margin-bottom: 20px;
+
+}
+
+.content p {
+  color: #ba0a0a;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.content a {
+  color: #ba0a0a;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.content a:hover {
+  color: #fff;
+}
+.whatsapp_float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.whatsapp-icon {
+  margin-top: 16px;
+}
+
+/* for mobile */
+@media screen and (max-width: 767px) {
+  .whatsapp-icon {
+      margin-top: 10px;
+  }
+
+  .whatsapp_float {
+      width: 40px;
+      height: 40px;
+      bottom: 20px;
+      right: 10px;
+      font-size: 22px;
+  }
+
+  .content h1 {
+      font-size: 30px;
+  }
+
+  .content p {
+      font-size: 18px;
+  }
+
+  .content a {
+      font-size: 16px;
+  }
+
+  .column {
+      width: 100%;
+  }
+
+}
+
+/* for mobile */
+
+
+/* Your existing CSS code */
+
+/* Parallax background effect */
+section {
+  color: #ba0a0a;
+  position: relative;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+
+
+}
+
+section h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+section p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+section a {
+  color: #ba0a0a;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+section a:hover {
+  color: #10e63b;
+}
+
+/* Parallax background effect */
+
+section {
+  color: #ba0a0a;
+  position: relative;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+section h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+
+section p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+section a {
+  color: #ba0a0a;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+section a:hover {
+  color: #10e63b;
+}
+
+/* Parallax background effect */
+
+
+#home {
+  background-image: url('lipu.jpg.jpg'); /* Replace with your own image */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+
+
+}
+
+
+#about {
+  background-image: url('my5.jpg'); /* Replace with your own image */
+
+  height: 100vh;
+
+}
+
+#portfolio {
+  background-image: url('my2.jpg'); /* Replace with your own image */
+
+  height: 100vh;
+
+
+}
+
+#contact {
+  background-image: url('my3.jpg'); /* Replace with your own image */
+  height: 100vh;
+
+
+}
+
+#social media {
+  background-image: url('my4.jpg'); /* Replace with your own image */
+  height: 100vh;
+
+}
+
+
+
+
